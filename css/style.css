@@ -30,10 +30,13 @@
 }
 
 /* Menú */
-nav ul {
+nav ul, .menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+nav ul {
   overflow: hidden;
   background-color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
@@ -43,7 +46,7 @@ nav ul li {
   float: left;
 }
 
-nav ul li a {
+nav ul li a, .footer-links a, .social-links a {
   display: block;
   color: var(--text-color);
   text-align: center;
@@ -52,8 +55,9 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .footer-links a:hover, .social-links a:hover {
   background-color: var(--hover-color);
+  text-decoration: underline;
 }
 
 .menu-toggle {
@@ -63,11 +67,6 @@ nav ul li a:hover {
 .menu {
   display: flex;
   justify-content: center;
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 .menu li {
@@ -125,24 +124,18 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-.importancia,
-.ventajas,
-.porque {
+.importancia, .ventajas, .porque {
   background-color: var(--background-color);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
 }
 
-.importancia h3,
-.ventajas h3,
-.porque h3 {
+.importancia h3, .ventajas h3, .porque h3 {
   color: var(--primary-color);
 }
 
-.importancia p,
-.ventajas p,
-.porque p {
+.importancia p, .ventajas p, .porque p {
   color: var(--text-light-color);
 }
 
@@ -162,9 +155,7 @@ footer .container {
   flex-wrap: wrap;
 }
 
-.footer-links,
-.social-links,
-.contact-info {
+.footer-links, .social-links, .contact-info {
   flex: 1;
   margin: 10px;
   padding: 10px;
@@ -172,30 +163,15 @@ footer .container {
   background-color: var(--secondary-color);
 }
 
-.footer-links h3,
-.social-links h3,
-.contact-info h3 {
+.footer-links h3, .social-links h3, .contact-info h3 {
   margin-top: 0;
 }
 
-.footer-links ul,
-.social-links ul {
+.footer-links ul, .social-links ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer-links ul li,
-.social-links ul li {
+.footer-links ul li, .social-links ul li {
   margin-bottom: 5px;
-}
-
-.footer-links a,
-.social-links a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.social-links a:hover {
-  text-decoration: underline;
 }
