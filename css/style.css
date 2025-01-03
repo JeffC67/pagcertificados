@@ -1,22 +1,27 @@
-/* styles.css */
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
+/* Variables */
+:root {
+  --primary-color: #333;
+  --secondary-color: #555;
+  --text-color: white;
+  --hover-color: #111;
+  --background-color: #f2f2f2;
+  --text-light-color: #666;
+}
 
 /* Slider */
-/* styles.css */
-
 .slider {
-  max-width: 600px; /* Define el ancho máximo del slider */
-  margin: 0 auto; /* Centra el slider en la página */
+  max-width: 600px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.slider-img{
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+.slider-img {
+  width: 100%;
+  height: auto;
   display: none;
 }
 
@@ -24,33 +29,33 @@
   display: block;
 }
 
-
 /* Menú */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul li {
-    float: left;
+  float: left;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #111;
+  background-color: var(--hover-color);
 }
+
 .menu-toggle {
   display: none;
 }
@@ -72,49 +77,47 @@ nav ul li a:hover {
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   .menu {
-      display: none;
+    display: none;
   }
-  
+
   .menu-toggle {
-      display: block;
-      cursor: pointer;
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 24px;
-      z-index: 999;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    z-index: 999;
   }
-  
+
   .menu.open {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
   }
-  
+
   .menu.open li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
 
-
 /* Contenedor */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Secciones */
 .section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-/* styles.css */
 
 .grid {
   display: grid;
@@ -125,7 +128,7 @@ nav ul li a:hover {
 .importancia,
 .ventajas,
 .porque {
-  background-color: #f2f2f2;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -134,28 +137,25 @@ nav ul li a:hover {
 .importancia h3,
 .ventajas h3,
 .porque h3 {
-  color: #333;
+  color: var(--primary-color);
 }
 
 .importancia p,
 .ventajas p,
 .porque p {
-  color: #666;
+  color: var(--text-light-color);
 }
 
-
 /* Footer */
-/* styles.css */
-
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   padding: 20px 0;
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
+footer .container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -169,7 +169,7 @@ footer {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #555;
+  background-color: var(--secondary-color);
 }
 
 .footer-links h3,
@@ -191,7 +191,7 @@ footer {
 
 .footer-links a,
 .social-links a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -199,4 +199,3 @@ footer {
 .social-links a:hover {
   text-decoration: underline;
 }
-
