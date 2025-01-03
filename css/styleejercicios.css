@@ -72,6 +72,13 @@ main {
     max-width: 1000px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 #instrucciones {
     background: #e2e2e2;
     border: 1px solid #ccc;
