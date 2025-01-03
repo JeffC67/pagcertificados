@@ -10,16 +10,16 @@
     <header>
         <div class="container">
             <h1>Certificados</h1>
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="/antecedentesP.html">Antecedentes policia</a></li>
-                    <li><a href="/antecedentesC.html">Antecedentes Contraloria</a></li>
-                    <li><a href="/antecedentesPr.html">Antecedentes Procuraduraria</a></li>
-                    <li><a href="/sisben.html">Sisben</a></li>
-                    <li><a href="/adres.html">Adres o Fosyga</a></li>
-                    <li><a href="#">Ruaf</a></li>
+                    <li><a href="antecedentesP.html">Antecedentes policia</a></li>
+                    <li><a href="antecedentesC.html">Antecedentes Contraloria</a></li>
+                    <li><a href="antecedentesPr.html">Antecedentes Procuraduraria</a></li>
+                    <li><a href="sisben.html">Sisben</a></li>
+                    <li><a href="adres.html">Adres o Fosyga</a></li>
+                    <li><a href="ruaf.html">Ruaf</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,19 +30,22 @@
             <h3>paso 1.</h3>
             <h3>Abre la pagina <a href="https://ruaf.sispro.gov.co/TerminosCondiciones.aspx" target="_blank">https://ruaf.sispro.gov.co/TerminosCondiciones.aspx</a>.</h3>
             <h3>paso 2.<br><br>Baja la pagina hasta encontrar el botón de enviar<br> Haz click en "Acepto" y después en el botón "Enviar"</h3>
-            <img src="/img/pics/capR1.png" height="600px" width="1000px">
+            <img src="/img/pics/capR1.png" height="300px" width="500px">
             <h3>paso 3.<br><br>Se selecciona el tipo de documento del cliente(se observa en numero 1)<br><br>Después se ingresa el número de documento (se observa en numero 2)<br><br>Después se pide al cliente la fecha de expedición del documento (número 3)<br><br><img src="/img/pics/capR2.png" height="600px" width="1000px"><br><br>Como se muestra se selecciona el año primero(número 1), después el mes (número 2) y por ultimo el dia (número 3)<br><br><img src="/img/pics/capR3.png" height="600px" width="1000px"><br><br> por ultimo se da click en "consultar" (número 4)</h3>
-            <img src="/img/pics/capR2.png" height="600px" width="1000px">
+            <img src="/img/pics/capR2.png" height="300px" width="500px">
             <h3>Paso 4.<br><br>Después se da click en imprimir como se muestra en la imagen</h3>
-            <img src="/img/pics/capR4.png" height="600px" width="1000px">
+            <img src="/img/pics/capR4.png" height="300px" width="500px">
             <h3>Paso 5.<br><br>Después se vuelve a dar click en "imprimir"</h3>
-            <img src="/img/pics/capR5.png" height="600px" width="1000px">
+            <img src="/img/pics/capR5.png" height="300px" width="500px">
             <h3>Paso 6.<br><br>Después se da click donde se indica en la imagen</h3>
-            <img src="/img/pics/capR6.png" height="600px" width="1000px">
+            <img src="/img/pics/capR6.png" height="300px" width="500px">
             <h3>Paso 7.<br><br>Después de abierto aparece esto, se selecciona si es a color o a blanco y negro (número 1)<br><br>Después se da click en "Imprimir" (número 2)</h3>
-            <img src="/img/pics/capR8.png" height="600px" width="1000px">
+            <img src="/img/pics/capR8.png" height="300px" width="500px">
         </section>
     </main>  
 </body>
-<script src="/JavaScript/scripts.js"></script>
+<script src="JavaScript/scripts.js"></script>
+<script>
+    document.getElementById('menuToggle').addEventListener('click', toggleMenu);
+</script>
 </html>
